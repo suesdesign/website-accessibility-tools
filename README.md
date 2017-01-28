@@ -1,4 +1,4 @@
-# Website Accessibility Aid
+# Website Accessibility Tools
 
 Adds tools for enlarging or decreasing text size and changing the contrast to a website page.
 
