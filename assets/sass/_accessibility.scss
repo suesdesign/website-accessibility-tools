@@ -1,0 +1,76 @@
+$highcontrast-text: #ffffff;
+$highcontrast: #000000;
+$lowcontrast: #ffffcc;
+
+#accessibility {
+	margin-bottom: 20px;
+	li {
+		padding: 0 0 10px 10px;
+		a {
+			color: #000000;
+			display: block;
+		}
+	}
+}
+
+#textsize {
+	margin-left: 5px;
+	li {
+	float: left;
+	padding: 0 5px 0 5px;
+	margin-left: 15px;
+		a {
+			padding: 8px;
+			margin: 2px;
+		}
+	}
+}
+
+#stylechange li {
+	float: left;
+	padding: 0 5px 0 5px;
+	margin-left: 5px;
+	a {
+		padding: 8px;
+		margin: 2px;
+	}
+}
+
+.normalcontrast-a {
+	background-color: #ffffff;
+}
+
+.lowcontrast-a {
+	background-color: #ffffcc;
+}
+
+body #stylechange {
+	a.highcontrast-a {
+		background-color: #000000;
+		color: #ffffff;
+	}
+}
+
+.lowcontrast {
+	background-color: $lowcontrast;
+	#main-nav a {
+		color: $lowcontrast
+	}
+}
+
+.highcontrast{ 
+	background-color: $highcontrast;
+	color: $highcontrast-text;
+	#textsize a {
+		color: #ffffff;
+	}
+	#branding p{
+		color: #ffffff;
+	}
+	.sidebar a {
+		color: #ffffff;
+		&:hover{
+			color: lighten($highcontrast, 50%);
+			}
+	}
+}
