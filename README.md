@@ -12,6 +12,7 @@ Add the following code on the website page where you want the tools to be placed
 
 ```
 <div id='accessibility'>
+</div>
 
 ```
 
