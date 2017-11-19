@@ -31,7 +31,7 @@ nav ul li a, .sidebar ul li a, #textsize li a, #stylechange li a{
 				font-size: 2em;
 				display: block;
 				padding: 10px;
-				&:hover { 
+				&:hover, &:focus { 
 					color: darken($brand-primary, 30%);
 				}
 			}
@@ -49,7 +49,7 @@ nav ul li a, .sidebar ul li a, #textsize li a, #stylechange li a{
 			display: block;
 			font-weight: bold;
 			color: $brand-primary;
-			&:hover { 
+			&:hover, &:focus { 
 					color:darken($brand-primary, 30%);
 				}
 		}
@@ -78,7 +78,7 @@ article p {
 
 .credit a {
 	color: $brand-primary;
-	&:hover {
+	&:hover, &:focus {
 		color: darken($brand-primary, 40%);
 	}
 }

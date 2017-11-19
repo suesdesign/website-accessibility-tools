@@ -6,6 +6,8 @@
  * Demo: http://accessibility.suesdesign.co.uk/
  */
 
+ /*jshint multistr: true */
+
 
 (function($){ 
 
@@ -26,8 +28,10 @@ function backgroundChange(){
         break;
 
         default:
-    };
-};
+    }
+}
+
+// extra semi-colon above
 
 // Place accessibility elements on page
 
@@ -39,20 +43,18 @@ $('div#accessibility').prepend('\
     <li><a class="highcontrast-a" href="#">A</a></li></ul>');
 
    
-if (sessionStorage.getItem('fontsize') == null){
+if (sessionStorage.getItem('fontsize') === null){
         fontSize = $('body').css('font-size');
     } else {fontSize = sessionStorage.getItem('fontsize');
-    };
+}
 
-    fontSize = parseInt(fontSize); 
-
-     $('body, article p').css({'font-size':fontSize});
+fontSize = parseInt(fontSize); 
  
-
-// Enlarge and decrease font size
+//Enlarge and decrease the font-size
 
 $('#textsize a').click(function(e) {
-      e.preventDefault();
+    // Prevent the default action for the links
+        e.preventDefault();
 
 // Increase or decrease font-size
    
@@ -80,7 +82,7 @@ $('#textsize a').click(function(e) {
 if (sessionStorage.getItem('stylechange') !== null){
     styleChange = sessionStorage.getItem('stylechange');
     backgroundChange();
-};
+}
 
 // Stop default action from links
 
@@ -89,7 +91,7 @@ $('#stylechange a').click(function(e){
 
 // Remove class from body if set 
 
- $('body').removeClass('lowcontrast highcontrast');
+$('body').removeClass('lowcontrast highcontrast');
 
 // Get value of current class   
     styleChange = $(this).attr('class');    

@@ -69,7 +69,7 @@ body #stylechange {
 	}
 	.sidebar a {
 		color: #ffffff;
-		&:hover{
+		&:hover, &:focus {
 			color: lighten($highcontrast, 50%);
 			}
 	}
