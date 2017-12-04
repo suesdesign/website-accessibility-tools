@@ -15,7 +15,7 @@
 
 var fontSize, styleChange;
 
-//Change background and text colour
+// Change background and text colour
 
 function backgroundChange(){
     switch(styleChange){
@@ -30,8 +30,6 @@ function backgroundChange(){
         default:
     }
 }
-
-// extra semi-colon above
 
 // Place accessibility elements on page
 
@@ -50,7 +48,7 @@ if (sessionStorage.getItem('fontsize') === null){
 
 fontSize = parseInt(fontSize); 
  
-//Enlarge and decrease the font-size
+// Enlarge and decrease the font-size
 
 $('#textsize a').click(function(e) {
     // Prevent the default action for the links
